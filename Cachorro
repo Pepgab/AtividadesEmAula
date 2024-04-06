@@ -1,0 +1,36 @@
+package ClassesEObjetos;
+
+public class Cachorro {
+
+	String nome;
+	String raca;
+	int idade;
+	
+	public Cachorro(String nome, String raca, int idade) {
+		this.nome = nome;
+		this.raca = raca;
+		this.idade = idade;
+	}
+	
+	public void identifica() {
+		System.out.println("O cachorro da raça " + raca + " se chama " + nome + " e tem " + idade + " anos.");
+	}
+	
+	public void latir() {
+		System.out.println("O cachorro " + nome + " da raça " + raca + " está latindo! \n");
+	}
+	
+	public static void main(String[] args) {
+		Cachorro cachorro1 = new Cachorro("Rex", "Labrador", 3);
+		Cachorro cachorro2 = new Cachorro("Bob", "Poodle", 5);
+		
+		cachorro1.identifica();
+		cachorro1.latir();
+		
+		cachorro2.identifica();
+		cachorro2.latir();
+		
+	}
+	
+	
+}
