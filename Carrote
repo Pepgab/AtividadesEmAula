@@ -1,0 +1,25 @@
+package ClassesEObjetos;
+
+public class Carrote {
+
+	String marca;
+	String modelo;
+	double preco;
+	int ano;
+	
+	public Carrote(String marca, String modelo, double preco, int ano) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.preco = preco;
+		this.ano = ano;
+	}
+	
+	public static void main(String[] args) {
+		Carrote carro1 = new Carrote("Toyota", "Corolla", 50000.0, 2020);
+		System.out.println("Marca: " + carro1.marca);
+		System.out.println("Modelo: " + carro1.modelo);
+		System.out.println("Preço: " + carro1.preco);
+		System.out.println("Ano: " + carro1.ano);
+		System.out.println();
+	}
+}
