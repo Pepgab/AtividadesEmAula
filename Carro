@@ -1,0 +1,21 @@
+package ClassesEObjetos;
+
+public class Carro {
+
+	private String marca;
+	
+	public Carro(String marca) {
+		this.marca = marca;
+	}
+	
+	public void ligar() {
+		System.out.println("O carro da marca " + marca + " está ligado. ");
+	}
+	
+	public static void main(String[] args) {
+		Carro meuCarro = new Carro ("Toyota");
+		
+		
+			meuCarro.ligar();
+	}
+}
